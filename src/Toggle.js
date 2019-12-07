@@ -15,7 +15,9 @@ const Toggle = () => {
         style={{
           transform: y
             .interpolate({
+              // timing
               range: [0, 0.25, 0.5, 0.75, 1],
+              // value
               output: [0, -25, -50, -100, -50]
             })
             .interpolate(y => `translate3d(0, ${y}px, 0)`),
