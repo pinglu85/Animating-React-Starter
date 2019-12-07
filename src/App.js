@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 import logo from './logo.svg';
 import './App.css';
-import Toggle from './Toggle';
+import Routes from './Routes';
 import Nav from './Nav';
 import Checkout from './Checkout';
 
@@ -30,7 +30,7 @@ const App = () => {
         {/* <Nav style={navAnimation} /> */}
       </header>
       <main>
-        <Toggle />
+        <Routes />
         <Checkout isOpen={isNavOpen} />
       </main>
     </animated.div>
