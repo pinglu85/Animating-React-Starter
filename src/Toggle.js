@@ -62,6 +62,7 @@ export default Toggle;
 //   leave: { opacity: 0 }
 // });
 
+// eslint-disable-next-line no-lone-blocks
 {
   /* <div style={{ position: 'relative' }}>
   {transition.map(({ item, key, props }) =>
