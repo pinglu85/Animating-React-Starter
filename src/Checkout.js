@@ -1,9 +1,14 @@
 import React from 'react';
-import { useSpring, animated } from 'react-spring';
+import { useSpring, animated, config } from 'react-spring';
 
 const Checkout = ({ isOpen }) => {
   const { x } = useSpring({
-    x: isOpen ? 0 : 100
+    x: isOpen ? 0 : 100,
+    config: config.wobbly
+    // config: {
+    //   tension: 400,
+    //   friction: 200
+    // }
   });
   return (
     <div
