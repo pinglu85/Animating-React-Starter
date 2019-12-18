@@ -86,11 +86,13 @@ h1 {
   bottom: 0;
   display: flex;
 }
+
 .checkout-left {
   width: 30%;
   height: 100%;
   background: white;
 }
+
 .checkout-right {
   width: 70%;
   height: 100%;
@@ -108,6 +110,7 @@ h1 {
 .page-route.two {
   background: blueviolet;
 }
+
 .page-route.three {
   background: teal;
 }
@@ -116,6 +119,7 @@ h1 {
   display: flex;
   list-style: none;
 }
+
 .router-nav a {
   color: white;
   font-size: 2rem;
@@ -157,7 +161,9 @@ h1 {
 .waypoints {
   background: white;
   font-size: 2rem;
+  margin: auto;
   padding: 20px;
+  width: 40vw;
 }
 
 .box {
