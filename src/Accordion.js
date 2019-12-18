@@ -5,6 +5,7 @@ import useMeasure from './useMeasure';
 const Accordion = () => {
   const [on, toggle] = useState(false);
   const [bind, { height, top }] = useMeasure();
+  console.log('bind:', bind);
   console.log('height:', height);
   const animation = useSpring({
     overflow: 'hidden',
