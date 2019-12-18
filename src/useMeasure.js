@@ -8,6 +8,9 @@ export default function useMeasure() {
     () => new ResizeObserver(([entry]) => set(entry.contentRect))
   );
   // eslint-disable-next-line no-sequences
-  useEffect(() => (ro.observe(ref.current), ro.disconnect), []);
+  useEffect(() => {
+    ro.observe(ref.current);
+    return () => ro.unobserve(ref.current);
+  }, []);
   return [{ ref }, bounds];
 }
