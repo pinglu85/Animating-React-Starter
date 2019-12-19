@@ -6,7 +6,7 @@ import ModalWrapper from './Modal';
 import Accordion from './Accordion';
 import Checkout from './Checkout';
 import Gesture from './Gesture';
-import Boundaries from './Boundaries';
+// import Boundaries from './Boundaries';
 
 const App = () => {
   const [isNavOpen, setNavOpen] = useState(false);
@@ -35,7 +35,7 @@ const App = () => {
         <ModalWrapper />
         <Accordion />
         <Gesture></Gesture>
-        <Boundaries />
+        {/* <Boundaries /> */}
       </main>
       <Checkout isOpen={isNavOpen} />
     </animated.div>
