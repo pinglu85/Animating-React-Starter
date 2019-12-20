@@ -5,7 +5,7 @@ import './App.css';
 import ModalWrapper from './Modal';
 import Accordion from './Accordion';
 import Checkout from './Checkout';
-import Gesture from './Gesture';
+import Boxes from './Boxes';
 // import Boundaries from './Boundaries';
 
 const App = () => {
@@ -23,7 +23,7 @@ const App = () => {
   });
 
   return (
-    <animated.div className="App" style={fade}>
+    <animated.div className="App">
       <header className="App-header">
         <img src={logo} className="logo" alt="logo" />
         <button onClick={() => setNavOpen(!isNavOpen)} className="menu-button">
@@ -34,7 +34,7 @@ const App = () => {
       <main>
         <ModalWrapper />
         <Accordion />
-        <Gesture></Gesture>
+        <Boxes />
         {/* <Boundaries /> */}
       </main>
       <Checkout isOpen={isNavOpen} />
