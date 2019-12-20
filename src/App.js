@@ -15,12 +15,12 @@ const App = () => {
       ? `translate3d(0,0,0) scale(1)`
       : `translate3d(100%,100%,0) scale(0.6)`
   });
-  const fade = useSpring({
-    from: {
-      opacity: 0
-    },
-    opacity: 1
-  });
+  // const fade = useSpring({
+  //   from: {
+  //     opacity: 0
+  //   },
+  //   opacity: 1
+  // });
 
   return (
     <animated.div className="App">
